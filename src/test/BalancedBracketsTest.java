@@ -41,6 +41,11 @@ public class BalancedBracketsTest {
         assertFalse(BalancedBrackets.hasBalancedBrackets("]["));
     }
 
+    @Test
+    public void anotherBalancedBracketsShouldReturnTrue(){
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[l[a]u[n]c]h"));
+    }
+
 
     // test these edge cases: "[[]", "[[][]]",
 
